@@ -1,0 +1,247 @@
+\subsection{简单宇宙模型}
+\begin{equation}
+	H^2 = \qty(\frac{\dot{a}}{a})^2 = \frac{8 \pi G}{3} \rho_{\text{tot}} - \frac{k c^2}{a^2}
+\end{equation}
+\begin{cnote}
+	流体和物态方程对不同介质是分别成立的，但Friedmann方程的$\rho_{\text{tot}}$是所有介质的质量密度之和，一般分别讨论只含某种介质的情况
+\end{cnote}
+
+\subsubsection{空的宇宙$\rho_{\text{tot}}=0$}
+\par 
+此时Friedmann方程变为$H^2 = \qty(\frac{\dot{a}}{a})^2 = - \frac{k c^2}{a^2}$，则$\dot{a} = \sqrt{-k} c$，现在方程只有曲率了
+\begin{itemize}
+	\item[1)] $k > 0$ 无意义
+	\item[2)] $k = 0, \dot{a} = 0, a = \text{const}$ 平直宇宙不膨胀，无物质，是平庸解
+	\item[3)] $k < 0, a \propto t \stackrel{a(t_0)=1}{\Longrightarrow} a(t) = \frac{t}{t_0}, t_0 = \qty(\sqrt{-k} c)^{-1}$ 描述了一个虚无（empty）、负曲率、膨胀的宇宙，Milne宇宙（1930年E.A.Milne）
+\end{itemize}
+
+\subsubsection{$k=0$仅有一类宇宙介质}
+\par 
+此时Friedmann方程变为$\qty(\frac{\dot{a}}{a})^2 = \frac{8 \pi G}{3} \rho_{\text{tot}}$
+
+\begin{itemize}
+	\item[1)] 仅含有宇宙学常数$\rho_{\Lambda} = \frac{\Lambda}{8 \pi G} \Rightarrow H^2(t) = \qty(\frac{\dot{a}}{a})^2 = \frac{\Lambda}{3}, \Lambda > 0$，这说明尺度因子按指数变化$a(t) = \ee^{H_0 (t - t_0)}$ \\
+	de Sitter宇宙（1917年W.de Sitter），没有物质，不能描述当前宇宙，但可以描述宇宙早期的暴涨阶段
+	
+	\item[2)] 对尘埃和辐射 \\
+	有$\rho \propto a^{-3(1+\omega)}$，代入Friedmann方程得到$\qty(\frac{\dot{a}}{a})^2 \propto a^{-3(1+\omega)}$ $\Rightarrow$ $a(t) = \qty(\frac{t}{t_0})^{\frac{2}{3(1+\omega)}}, \rho(a(t)) = \rho(t) \propto t^{-2}$ \\
+	具体地：(Einstein-de Sitter模型，1932年)
+	\begin{itemize}
+		\item[a.] 对尘埃，$\omega = 0$，$a(t) = \qty(\frac{t}{t_0})^{\frac{2}{3}}$，$\rho(t) = \rho_0 \qty(\frac{t}{t_0})^{-2}$
+		\item[b.] 对辐射，$\omega = \frac{1}{3}$，$a(t) = \qty(\frac{t}{t_0})^{\frac{1}{2}}$，$\rho(t) = \rho_0 \qty(\frac{t}{t_0})^{-2}$
+	\end{itemize}
+\end{itemize}
+
+\begin{table}[!h]
+	\centering
+	\scriptsize
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|ccc|c|}
+		\hline
+		& \multicolumn{3}{c|}{$k=0$}                                                                                                                                                                                                 & $k<0$ \\ \hline
+		& \multicolumn{1}{c|}{de Sitter}                                                   & \multicolumn{1}{c|}{Einstein-de Sitter}                                      & 纯辐射                                                      & Milne         \\ \hline
+		宇宙组成   & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}只含$\Lambda$\\ $\omega=-1$\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}只含尘埃\\ $\omega=0$\end{tabular}} & \begin{tabular}[c]{@{}c@{}}只含辐射\\ $\omega=\frac{1}{3}$\end{tabular} & 只有负曲率         \\ \hline
+		尺度因子 $a(t)$  & \multicolumn{1}{c|}{$a=\ee^{H_0(t - t_0)}$}                                                         & \multicolumn{1}{c|}{$a = \qty(\frac{t}{t_0})^{\frac{2}{3}}$}                                                       &      $a = \qty(\frac{t}{t_0})^{\frac{1}{2}}$       &    $a = \frac{t}{t_0}$   \\ \hline
+		哈勃参数   & \multicolumn{1}{c|}{$H(t)=H(t_0)=\sqrt{\frac{\Lambda}{3}}$}                                                           & \multicolumn{1}{c|}{$H(t) = \frac{2}{3t}$}          &        $H(t) = \frac{1}{2t}$               &   $H(t) = \frac{1}{t}$   \\ \hline
+		膨胀速度$v \propto \dot{a}$   & \multicolumn{1}{c|}{$v \propto \ee^{H_0 t}$}                                                           & \multicolumn{1}{c|}{$v \propto t^{-\frac{1}{3}}$}                                                       &               $v \propto t^{-\frac{1}{2}}$     &   $v = \text{const}$     \\ \hline
+		减速参数$q = \frac{-\ddot{a}}{a H^2}$ & \multicolumn{1}{c|}{-1（加速）}                                                           & \multicolumn{1}{c|}{$\frac{1}{2}$（减速）}                                                       &    1（减速）            &    0（匀速自由膨胀）   \\ \hline
+		$\rho(a)$ & \multicolumn{1}{c|}{常数$\frac{\Lambda}{8 \pi G}$}                                                           & \multicolumn{1}{c|}{$\propto a^{-3} \propto t^{-2}$}                                                       &                      $\propto a^{-4} \propto t^{-2}$    &   $a^{-2}$     \\ \hline
+	\end{tabular}}
+	\caption{简单宇宙模型表}
+\end{table}
+
+\subsection{多分量共存的宇宙学模型}
+\subsubsection{平直时空，只含物质和辐射}
+\par 
+流体方程对不同分量分别成立，$\rho_{\text{mat}} \propto a^{-3}, \rho_{\text{rad}} \propto a^{-4}$，Friedmann方程中$\rho_{\text{tot}} = \rho_{\text{mat}} + \rho_{\text{rad}} \quad (\Lambda = 0)$难以解析求解
+\par 
+策略：考虑某一主导分量
+\begin{itemize}
+	\item[1)] 辐射主导$\rho_{\text{tot}} \simeq \rho_{\text{rad}}$，此时尺度因子行为$a(t) \propto t^{\frac{1}{2}}, \rho_{\text{rad}} \propto t^{-2} \Rightarrow \rho_{\text{mat}} \propto a^{-3} \propto t^{-\frac{3}{2}}$ \\
+	随$t$增加，物质的质量密度衰减比辐射慢
+	
+	\item[2)] 物质主导$\rho_{\text{tot}} \simeq \rho_{\text{mat}}$，此时尺度因子行为$a(t) \propto t^{\frac{3}{2}}, \rho_{\text{mat}} \propto t^{-2} \Rightarrow \rho_{\text{rad}} \propto a^{-4} \propto t^{-\frac{8}{3}}$ \\
+	仍然是辐射衰减快
+\end{itemize}
+\par 
+故辐射主导不稳定而物质主导稳定，最终物质占主导地位
+
+\subsubsection{更一般的情况}
+\par
+对于更一般的多分量共存宇宙，根据密度参数之间的关系（主要是$\Omega_0$和$\Omega_{\Lambda, 0}$的关系）
+\par 
+Friedmann方程$H^2 = \frac{8 \pi G}{3} (\rho + \rho_{\Lambda}) - \frac{k c^2}{a^2}, 1 = \frac{8 \pi G}{3 H^2} (\rho + \rho_{\Lambda}) - \frac{k c^2}{H^2 a^2} \Rightarrow 1 = \frac{\rho + \rho_{\Lambda}}{\rho_c} - \frac{k c^2}{a^2 H^2} \equiv \Omega + \Omega_{\Lambda} + \Omega_{k}$
+
+\begin{itemize}
+	\item 分类一：开放、封闭、平直 \\ 
+	\cword[blue]{$\Omega_{\Lambda, 0} = 1 - \Omega_{0} + \frac{k c^2}{H_0^2}$}，当$\Omega_{\Lambda, 0} = 1 - \Omega_{0}$时$k = 0$
+	
+	\item 分类二：由加速度方程$\frac{\ddot{a}}{a} = - \frac{4 \pi G}{3} \qty(\rho + \frac{3p}{c^2}) + \frac{\Lambda}{3}$以及减速参数定义$q = - \frac{\ddot{a}}{a H^2}$，可以得到$q H^2 = \frac{4 \pi G}{3} \qty(\rho + \frac{3p}{c^2}) - \frac{\Lambda}{3}$ \\
+	考虑当前时刻（物质主导）$q_0^2 H_0^2 \simeq \frac{4 \pi G}{3} \rho_{\text{mat}, 0} - \frac{\Lambda}{3}$ \\ 故\cword[red]{$q_0 = \frac{4 \pi G}{3 H_0^2} \rho_0 - \frac{\Lambda}{3 H_0^2} = \frac{1}{2} \Omega_{0} - \Omega_{\Lambda, 0}$} \\
+	若进一步考虑$k=0$情况，Friedmann方程退化为$\Omega + \Omega_{\Lambda} = 1, q_0 = \frac{3}{2} \Omega_0 - 1$，当$\Omega_{0} = \frac{2}{3}$时$q_0 = 0 \Rightarrow \Omega_{\Lambda, 0} > \frac{1}{3}$则加速膨胀
+	
+	\item 其它分类：1. 宇宙初始时刻\cword[magenta]{有无大爆炸}；2. 宇宙\cword[green]{最终坍缩还是持续膨胀}
+\end{itemize}
+
+\begin{tikzpicture}[global scale = 1.3]
+	
+	\draw[->,black] (0, -1) -- (4, -1);
+	\foreach \x in {1, 2, 3} \draw[black] (\x, -1cm - 1pt) -- (\x, -1cm + 1pt) node[anchor=north] {$\x$};
+	\draw[black] (0, -1cm - 1pt) -- (0, -1cm + 1pt) node[anchor=north west] {$0$};
+	\draw[black] (4.2, -1) node[anchor=west] {$\Omega_0$};
+	\draw[->,black] (0, -1.5) -- (0, 4);
+	\foreach \x in {-1, 0, 1, 2, 3} \draw[black] (-1pt, \x) -- (1pt, \x) node[anchor=east] {$\x$};
+	\draw[black] (0, 4.2) node[anchor=east] {$\Omega_{\Lambda, 0}$};
+	
+	\draw[black] (0, 3) -- (3, 3);
+	\foreach \x in {1, 2} \draw[black] (\x, 3cm - 1pt) -- (\x, 3cm + 1pt);
+	\draw[black] (3, -1) -- (3, 3.5);
+	\foreach \x in {-1, 0, 1, 2, 3} \draw[black] (-1pt + 3cm, \x) -- (1pt + 3cm, \x);
+
+	\draw[blue] (0, 1) -- (2, -1);
+	\draw[red] (0, 0) -- (3, 1.5);
+	\draw[blue] (1, 0) node[anchor=north east, font=\fontsize{8}{8}] {开放};
+	\draw[blue] (1, 0) node[anchor=south west, font=\fontsize{8}{8}] {封闭};
+	\draw[red] (2, 1) node[anchor=north west, font=\fontsize{8}{8}] {减速};
+	\draw[red] (2, 1) node[anchor=south east, font=\fontsize{8}{8}] {加速};
+	
+	\draw[magenta] (0, 1) .. controls (0.3, 2) and (0.5, 2.5) .. (1.3, 3);
+	\draw[magenta] (0.6, 2.5) node[anchor=north west, font=\fontsize{6}{6}] {有大爆炸};
+	\draw[magenta] (0.6, 2.5) node[anchor=south east, font=\fontsize{6}{6}] {无大爆炸};
+	
+	\draw[green] (0, 0) .. controls (1, 0.1) and (2, 0.25) .. (3, 0.45);
+	\draw[green] (2.5, 0.3) node[anchor=north, font=\fontsize{6}{6}] {再坍缩};
+	\draw[green] (2.5, 0.25) node[anchor=south east, font=\fontsize{6}{6}] {一直膨胀};
+
+\end{tikzpicture}
+
+\par 
+可见$\Omega_{0}$和$\Omega_{\Lambda, 0}$是两个很关键的可观测量
+\begin{cbox}
+	{$\Omega_{0}$和$\Omega_{\Lambda, 0}$的观测值是多少？}
+	当前关于超新星和CMB以及重子声学振荡（BAO）等多种观测已经把参数的可能取值限制在很小的范围内，$\Omega_{0} \simeq 0.3, \Omega_{\Lambda, 0} \simeq 0.7$ \\
+	所以当前宇宙$k \simeq 0$，加速膨胀，存在大爆炸，持续膨胀，我们把$\Omega_{0} \simeq 0.3, \Omega_{\Lambda, 0} \simeq 0.7$叫做宇宙学标准模型，即Flat $\Lambda$CDM模型
+\end{cbox}
+
+\subsection{宇宙年龄}
+\subsubsection{观测限制}
+The age of the universe, 'Physics Reports', 307, (1998) 23-30, Review.
+\begin{itemize}
+	\item[1. ] 地质学限制：$T_{\text{地球}} \sim 50 \text{亿年}$
+	\item[2. ] 核年代学研究星系盘中铀同位素相对值：大约有$T > 100 \text{亿年}$
+	\item[3. ] 白矮星冷却曲线：大约有$T > 100 \text{亿年}$
+	\item[4. ] 最佳方案：研究古老球状星团，得到$T \simeq 100  \textasciitilde 130 \text{亿年}$
+\end{itemize}
+
+\subsubsection{理论}
+\begin{itemize}
+	\item[1. ] Milne宇宙（$\rho_{\text{tot}} = 0$）$a(t) = \frac{t}{t_0}, H(t) = \frac{1}{t}, v(t) = \text{const}$，宇宙从$t=0, a(0) = 0$开始匀速膨胀到$a(t_0) = 1$的状态，得到宇宙年龄$\frac{1}{H_0}$约为140亿年（$h \simeq 0.7$）
+	\item[2. ] 物质与辐射混合$k = \Lambda = 0$，辐射比物质衰减得快 $\Rightarrow$ 宇宙演化中大多数时间物质主导$\frac{\dot{a}}{a} = H(t) = \frac{2}{3t}$，故有宇宙年龄约为$t_0 = \frac{2}{3H_0} \simeq 93 \text{亿年}$
+	\item[3. ] Flat $\Lambda$CDM模型$\Omega + \Omega_{\Lambda} = 1$ \\
+	Friedmann方程$H^2 = \frac{8 \pi G}{3} \rho_{\text{tot}} = \qty(\frac{\dot{a}}{a})^2, \rho_{\text{tot}} = \rho + \rho_{\Lambda} \simeq \rho_{\text{mat}} + \rho_{\Lambda} = \rho_0 a^{-3} + \rho_{\Lambda} \Rightarrow \dot{a}^2 = \frac{8 \pi G}{3} (\rho_0 a^{-1} + \rho_{\Lambda, 0} a^{2}) = H_0^2 (\Omega_0 a^{-1} + \Omega_{\Lambda, 0} a^2)$ \\
+	$\dot{a} = H_0 \sqrt{\Omega_0 a^{-1} + \Omega_{\Lambda, 0} a^2}$积分得到$\int_{0}^{T} \dd t = \frac{2}{3 H_0} \frac{\arctan \sqrt{1-\Omega_{0}}}{\sqrt{1-\Omega_{0}}} \simeq 0.964 t_H \simeq 1.3456 \times 10^{10} \text{年}$
+	
+\end{itemize}
+
+
+\subsection{暗物质}
+\par 
+$\Omega_{0} = 0.3$，占宇宙30\%的非相对论物质不全是重子物质
+\subsubsection{重子物质的占比}
+\begin{cbox}
+	{发光恒星的质量密度占$\rho_c$的多少？}
+	恒星的结构理论：由恒星的温度亮度$\Rightarrow$估算出质量，若观测足够大的区域$\Rightarrow$估算区域内恒星质量密度 \\
+	研究结论（Ryden, P126）：$\Omega_{\text{Star}, 0} \simeq 0.003$，只占$\Omega_{0}$的1\%
+\end{cbox}
+
+
+\subsubsection{恒星之外的重子物质}
+\par
+是否所有的重子物质都以恒星形式存在？
+\begin{itemize}
+	\item[1. ] MACHOs(massive compact halo objects 大质量致密晕天体) \\
+	它们是一些低质量的恒星（发出的光太微弱探测不到），如褐矮星（$M < 0.08 M_{\text{Sun}}$）或恒星尺度的小型黑洞，这些天体一般通过引力透镜效应进行观测 \\
+	但即使考虑了MACHOs，对$\Omega_{\text{Star}, 0}$的估值也低于0.005，因此可作为DM的一部分但不会是全部
+	\item[2. ] 星系气体 \\
+	不仅存在于各个星系内（e.g.银河系或M31星系气体的质量是恒星质量的20\%），还大量存在于星系团内（e.g.在距离银河系100Mpc处的Coma Cluster后发座星系团，其恒星总质量$M_{\text{Comma star}} \simeq 2 \times 10^{13} M_{\text{Sun}}$，但该星系团内存在大量温度极高的星际气体$T \sim 10^8 \mathrm{K}$，可用X射线望远镜看到，对这些气体的研究给出$M_{\text{Comma gas}} \simeq 2 \times 10^{14} M_{\text{Sun}}$，是恒星质量的10倍） \\
+	星际气体也存在于星系、星系间之外的广阔的星际空间中，这部分气体占总重子数的85\%！但它们密度极低，温度极低，目前技术很难对它们直接测量
+\end{itemize}
+
+\par 
+CMB的观测结果和原初核合成理论限制：$0.021 \leqslant \Omega_{B} h^2 \leqslant 0.025$，若取$h = 0.7$，则$\Omega_{B} \in \qty[0.043, 0.051]$，仅有4\% \textasciitilde 5\%是重子物质，剩下25\%是非重子物质
+
+\par 
+结论：
+\begin{itemize}
+	\item[1. ] 发光天体只占重子物质的10\%左右
+	\item[2. ] 绝大多数重子物质不以恒星的形式存在，暗重子物质主要以星际气体形式存在，占总密度的4\%
+	\item[3. ] 宇宙中绝大多数的物质不仅不发光，而且不是重子物质，统称为暗物质
+\end{itemize}
+
+\subsubsection{暗物质存在的其它证据}
+\begin{itemize}
+	\item[1. ] 星系内存在DM（首次1914年Slipher） \\
+	理论上，由向心力公式和万有引力公式得到速度$v = \sqrt{\frac{G M(R)}{R}}$，当$R$较大时，$M(R) \leftarrow \text{const}$，故$v \propto R^{- \frac{1}{2}}$ \\
+	则Keplerian转动，$v$将衰减，而对M31等漩涡星系的观测表明（星系旋转曲线），$R$很大时$v$趋近于常数，这表明星系中有大量暗物质，实测速度比理论速度高3倍以上$\Rightarrow M_{\text{DM}} \simeq 10 M_{\text{star}}$
+	
+	\item[2. ] 星系团内也存在DM（首次1933年Zwicky） \\
+	仍以Coma Cluster为例，一般有3种方法可以估算出星系团的总质量：
+	\begin{itemize}
+		\item[1)] 质点系的位力定理可以算出$M_{\text{coma}} \simeq 2 \times 10^{15} M_{\text{Sun}}$
+		\item[2)] 高温气体辐射压与星系团自引力平衡也可推算出$M_{\text{coma}} \simeq 1.3 \times 10^{15} M_{\text{Sun}}$
+		\item[3)] 引力透镜，结果一致
+	\end{itemize}
+
+	\item[3. ] 结构形成：1980s人们意识到重子物质不足以提供形成当前观测结构的引力，需要引入暗物质
+\end{itemize}
+
+\par 
+主流观点认为，DM是由一种新型的与重子物质相互作用极弱的非重子物质构成，通常还假设这些物质缺乏使之形成盘状结构的耗散机制$\Rightarrow$DM形成球状晕结构 \\
+\resizebox{\linewidth}{!}{$
+	$$
+	\Omega_{\text{tot}} 
+	\begin{cases}
+		\Omega_{\text{mat}} \sim 0.3 \rightarrow 
+		\begin{cases}
+			\Omega_{\text{DM}} = 0.2 \textasciitilde 0.25 \\
+			\text{核合成} \Omega_{B} = 0.04 \textasciitilde 0.05 
+			\begin{cases}
+				\Omega_{\text{star}} = 0.005 \textasciitilde 0.01 \\
+				\Omega_{\text{non-star}} = 0.04 \textasciitilde 0.05 (\text{星际气体})
+			\end{cases} 
+		\end{cases} \\
+		\Omega_{\text{rad}} \sim 10^{-5} \\
+		\Omega_{\Lambda} \sim 0.7
+	\end{cases}
+	$$
+$}
+
+\subsubsection{暗物质可能是什么？}
+\begin{itemize}
+	\item[A] 基本粒子说：
+	\begin{itemize}
+		\item[1. ] 我们已知的基本粒子，但对其性质不确定，如中微子 \\
+		轻中微子，作为热暗物质，但不能很好解释宇宙结构形成（只可能作为一小部分） \\
+		重中微子，作为冷暗物质，大多数阶段非相对论性
+		\item[2. ] 超越标准模型的基本粒子，如BSM（超对称）中最轻的超对称伙伴（LSP） \\
+		LSP取决于模型，LSP是WIMPs(Weak Interacting Massive Particles)的一类 \\
+		另一类WIMPs例子：额外维中的Kaluza-Klein粒子
+	\end{itemize}
+
+	\item[B] 致密天体说：
+	\begin{itemize}
+		\item[1. ] 原初黑洞（Primordial Black Holes），前提：形成原初黑洞原在核合成之前
+		\item[2. ] MACHOs，但丰度不足以解释星系晕的形成，对其探测的主要手段是引力透镜
+	\end{itemize}
+\end{itemize}
+\subsubsection{暗物质探测法}
+\begin{itemize}
+	\item[1. ] 粒子对撞机
+	\item[2. ] 基于暗物质湮灭
+	\item[3. ] 暗物质与固体、液体的散射：与核碰撞散射 
+	$$\begin{cases}
+		\text{电信号：GaAs} \\
+		\text{光信号：NaI} \\
+		\text{热信号：产生声子进行探测}
+	\end{cases}$$
+\end{itemize}

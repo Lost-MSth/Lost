@@ -1,0 +1,484 @@
+\subsection{CMB的起源}
+\par 
+回顾：CMB的性质，CMB有平衡光子气的性质，观测得到$T_0 = 2.725 \mathrm{K}$
+\begin{itemize}
+	\item[1. ] CMB光子的总能量密度$\varepsilon_{\text{CMB}, 0} = \alpha T^4 \simeq 4.175 \times 10^{-14} \mathrm{J/m^3} = 0.2606 \mathrm{MeV/m^3}$
+	\item[2. ] CMB密度参数$\Omega_{\text{CMB}, 0} = \frac{\rho_{\text{CMB}, 0}}{\rho_{\text{c}, 0}} = \frac{\varepsilon_{\text{CMB}, 0}}{\rho_{\text{c}, 0} c^2} \simeq 2.47 \times 10^{-5} h^{-2}$，一般可忽略
+	\item[3. ] 光子的总粒子数密度$n_{\gamma} = \beta T^3 \simeq 4.107 \times 10^8 \mathrm{/m^3}$
+	\item[4. ] 光子平均能量$E_{\text{mean}} = 2.7 k_B T \simeq 6.344 \times 10^{-4} \mathrm{eV}, \quad f = \frac{E_{\text{mean}}}{h} \simeq 1.534 \times 10^{11} \mathrm{Hz}$，波长大约2mm，属于微波
+\end{itemize}
+
+\begin{cbox}
+	{黑体谱是平衡光子气体的性质，当前时刻CMB光子是否处于平衡}
+	不是，CMB是早期宇宙遗留下来的，其形成后自由传播至今，是一种遗迹，因此有早期宇宙的关键信息
+\end{cbox}
+
+\subsubsection{早期宇宙与原子的电离}
+\par 
+$\rho_{\gamma} \propto a^{-4}$，结合$\varepsilon_{\gamma} = \alpha T^4$可以得到$T \propto a^{-1}$，故早期光子气体温度极高 
+\par 
+例子：取$a = 10^{-6}$时，CMB光子温度$T \simeq 3 \times 10^{6} \mathrm{K}$，此时$E_{\text{mean}} = 2.7 k_B T \simeq 3 k_B T \simeq 700 \mathrm{eV}$，远大于氢原子的电离能$I = 13.6 \mathrm{eV}$
+\par 
+简单起见，近似认为宇宙中所有的重子物质全是氢原子，那么每一个能量高于$I$的光子就可以将一个氢原子电离掉，如果高能光子的数目远多于氢原子数，则宇宙中所有的氢原子将被全部电离，宇宙将处于完全电离的状态，只有自由的电子、质子、光子而没有原子
+\\
+\textbf{宇宙中光子和氢原子的粒子数之比}
+\par 
+由核合成结论$0.021 \ll \Omega_{\text{B}, 0} h^2 \ll 0.025$，取中间值$\Omega_{\text{B}, 0} \equiv \frac{\varepsilon_{\text{B}, 0}}{\rho_{\text{c}, 0} c^2} \simeq 0.023 h^{-2}$ 
+\par 
+由此知$\varepsilon_{\text{B}, 0} = \Omega_{\text{B}, 0} \rho_{\text{c}, 0} c^2 \simeq 241.5 \mathrm{MeV/m^3}$，自由质子或中子的质量939MeV，可知$n_{\text{B}, 0} = 0.26 \mathrm{m^{-3}}$
+\par 
+而光子$n_{\gamma, 0} = 4.11 \times 10^8 \mathrm{m^{-3}}$，所以光子与重子数密度之比$\frac{n_{\gamma, 0}}{n_{\text{B}, 0}} = 1.6 \times 10^9$，有时也用重子——光子数之比$\eta \equiv \frac{n_{\text{B}, 0}}{n_{\gamma, 0}} \simeq 6 \times 10^{-10}$
+
+\par 
+前面说过，宇宙大多数时刻粒子数守恒，因此$\eta$值在早期宇宙也成立，因此极早期H原子可被完全电离
+
+\subsubsection{Thomson散射与平衡态的建立}
+\par 
+自由电子与光子的相互作用$\gamma + \ee^{-} \rightarrow \gamma + \ee^{-}$
+\par 
+散射截面为$\sigma_{\ee} = 6.65 \times 10^{-29} \mathrm{m^2}$，是常数
+\par 
+光子平均自由程：平均而言一个光子在与$\ee^{-}$碰前走的距离$d = \frac{1}{n_{\ee} \sigma_{\ee}}$
+\par 
+光子平均碰撞时间：平均而言一个光子在碰到一个电子前所经历的时间$\frac{d}{c}$
+\par 
+光子与电子发生Thomson散射的速率（单位时间内发生散射的次数）：
+\begin{equation}
+	\Gamma = \frac{c}{d} = n_{\ee} \sigma_{\ee} c
+\end{equation}
+\par 
+在原子完全电离时，$n_{\ee} = n_{\mathrm{p}} \simeq n_{\mathrm{B}}$，因此有$n_{\ee} \simeq n_{\mathrm{B}} = n_{\mathrm{B}, 0} a^{-3}, n_{\mathrm{B}, 0} \simeq 0.26 \mathrm{m^{-3}}$
+\par 
+故有$\Gamma = n_{\ee} \sigma_{\ee} c = \frac{ n_{\mathrm{B}, 0} \sigma_{\ee} c}{a^3} \simeq 5.187 \times 10^{-21} a^{-3} \mathrm{s^{-1}}$
+\par 
+例如当$a = 10^{-6}$时，$\Gamma = 5.187 \times 10^{-3} \mathrm{/s}$
+\par 
+当$\Gamma \gg H$，就称光子与电子是耦合的，相互作用频繁，能达到平衡，有相同的$T$
+\par
+$\ee^{-}$与p也有相互作用，处于平衡$T$相同$\Rightarrow$光子气体的$T$就是整个宇宙的温度
+\par 
+由于$\gamma$与$\ee^{-}$之间有相互作用，此时的宇宙是不透明的
+
+\subsubsection{光子与电子退耦合（decoupling）与CMB的形成}
+\par 
+当$\Gamma \ll H$时，认为$\gamma$与$\ee^{-}$几乎不相互作用，光子从与$\ee^{-}$频繁碰撞到几乎不发生作用的过程叫做退耦。退耦后，宇宙变成透明的，$\gamma$开始向各个方向自由传播，形成CMB
+
+
+
+
+
+\par 
+$\Gamma = H$是光子是否退耦的分界线，已知碰撞速率与尺度因子的关系$\Gamma = \frac { 5.187 \times 10 ^ { - 21 } / \mathrm{s} } { a ^ { 3 } }$，只要能找到$H$和$a$的关系，就可以算出$\Gamma = H$所对应的尺度因子的值$a_{\text{dec}}$
+\par 
+当前宇宙$\rho_{\text{mat}} \gg \rho_{\text{rad}}$，但由关系式$\rho_{\text{mat}} = \rho_{\text{mat}, 0} a^{-3}, \rho_{\text{rad}} = \rho_{\text{rad}, 0} a^{-4}$可以看出宇宙早期有$\rho_{\text{rad}} \gg \rho_{\text{mat}}$，则在某一时刻有$\rho_{\text{mat}} = \rho_{\text{rad}}$，相应尺度因子$a_{\text{eq}} = 	\frac{\rho_{\text{rad}, 0}}{\rho_{\text{mat}, 0}} \simeq \frac{4.15 \times 10^{-5} h^{-2}}{0.3} \simeq 2.8 \times 10^{-4}$
+
+\begin{itemize}
+	\item[1. ] 辐射主导，$a < a_{\text{eq}}$ \\
+	Friedmann方程变为$H^2 = \frac{8 \pi G}{3} \rho_{\text{rad}}$或$\frac { H ^ { 2 } } { H _ { 0 } ^ { 2 } } = \frac { 8 \pi G \rho_{\text{rad}, 0} } { 3 H _ { 0 } ^ { 2 } a^4}  = \frac { \Omega _ { \text{rad}, 0 } } { a ^ { 4 } }$，因此辐射主导期的哈勃参数为$H = H_0 \sqrt{\Omega_{\text{rad}, 0}} a^{-2} = 100 h \mathrm{km \cdot s^{-1} \cdot Mpc^{-1}} \frac{\sqrt{4.15 \times 10^{-5} h^{-2}}}{a^2} = 2.14 \times 10^{-20} a^{-2} \mathrm{s^{-1}}$ \\
+	当$a = 10^{-6}$时，$H = 2.14 \times 10 ^ { - 8 } \mathrm{s ^ { - 1 }} \ll \Gamma = 5.187 \times 10 ^ { - 3 } / \mathrm{s}$，这说明此时光子与电子和质子是耦合在一起的 \\
+	当$a = 10^{-5}$时，$H = 2.14 \times 10 ^ { - 10 } \mathrm{s ^ { - 1 }} \ll \Gamma = 5.187 \times 10 ^ { - 6 } / \mathrm{s}$，光子仍未退耦合
+	
+	\item[2. ] 物质主导，$a > a_{\text{eq}}$，同样操作
+\end{itemize}
+
+\par 
+假设宇宙在其膨胀过程中始终保持完全电离的状态，则由$\Gamma = \frac { 5.187 \times 10 ^ { - 21 } / \mathrm{s} } { a ^ { 3 } }$可以计算出退耦所对应的尺度因子和温度分别为$a \simeq 0.0254, T \simeq 100 \mathrm{K}$（需要考虑辐射主导向物质主导的转变）
+
+\par 
+这一估计忽略了一个重要的因素，即当温度足够低使得电子和质子可以形成中性的氢原子而能够将氢原子电离的高能光子已经不多时，由于自由电子的减少，光子将迅速退耦，所以退耦是在中性原子的形成之后迅速完成的
+
+\par 
+电子与质子结合形成中性氢原子的阶段叫做复合（recombination）时期，大概发生在宇宙温度$T_{\text{rec}} = 3760 \mathrm{K}$，或宇宙年龄$t_{\text{rec}} = 250000 \text{年}$时
+\par 
+光子与电子的退耦发生在复合时期之后，$T_{\text{dec}} = 2970 \mathrm{K}, t_{\text{dec}} = 350000 \text{年}$
+
+\subsection{复合与退耦}
+\subsubsection{Saha方程}
+\par 
+在$T \gtrsim 1 \mathrm{eV}$，光子与重子通过$\gamma + \mathrm{H} \rightleftharpoons \mathrm{p} + \ee^{-}$达到平衡 \\
+为了定量地描述有多少中性H原子被电离，引入电离度$X$
+\begin{equation}
+	X = \frac{n_{\text{p}}}{n_{\text{B}}} = \frac{n_{\text{p}}}{n_{\text{H}} + n_{\text{p}}} \xlongequal[]{n_{\text{p}} = n_{\ee}} \frac{n_{\ee}}{n_{\ee} + n_{\text{H}}}
+\end{equation}
+\par 
+$X = 1$表示重子被完全电离$n_{\text{H}} = 0$，$X = 0$表示重子全是中性原子，可证明$\frac{1 - X}{X^2} = \frac{n_{\text{H}}}{n_{\ee}^2} n_{\text{B}}$，再利用$n_{\text{B}} = \eta n_{\gamma} = \eta \beta T^{3}$，如何把$\frac{n_{\text{H}}}{n_{\ee}^2}$表示成$T$的函数？
+\par 
+对于H，p，$\ee^{-}$均有$m c^2 \gg k_{\text{B}} T$，它们都可以当做非相对论的，由统计物理知，非相对论的总粒子数密度$n_{x} = g_x \qty(\frac{m_x k_{\text{B}} T}{2 \pi \hbar^2})^{\frac{3}{2}} \exp(\frac{-m_x c^2 + \mu_x}{k_{\text{B}} T}),\quad x = \text{H}, \text{p}, \ee^{-}$，其中$\mu_x$为化学势
+\par 
+化学平衡条件$\mu_{\text{H}} = \mu_{\ee} + \mu_{\text{p}}$得到，$\frac{n_{\text{H}}}{n_{\text{p}} n_{\ee^{-}}} = \frac{g_{\text{H}}}{g_{\ee} g_{\text{p}}} \qty(\frac{m_{\text{H}}}{m_{\ee} m_{\text{p}}} \frac{2 \pi \hbar^2}{k_{\text{B}} T})^{\frac{3}{2}} \ee^{-\beta (m_{\text{H}} -m_{\text{p}} - m_{\ee^{-}}) c^2}$
+\par 
+由电中性$n_{\text{p}} = n_{\ee}$，电离能$I = (-m_{\text{H}} +m_{\text{p}} + m_{\ee^{-}}) = 13.6\mathrm{eV}$，$\frac{m_{\text{H}}}{m_{\ee} m_{\text{p}}} \simeq \frac{1}{m_{\ee}}$，$g_{\text{p}} = g_{\ee^-} = 2, g_{\text{H}} = 4$得到\cword{Saha方程}：
+
+\begin{equation}
+	\frac{n_{\text{H}}}{n_{\ee}^2} = \qty(\frac{2 \pi \hbar}{m_{\ee} k_{\text{B}} T})^{\frac{3}{2}} \ee^{\frac{I}{k_{\text{B}}T}}
+\end{equation}
+
+
+\par 
+将Saha方程代入电离度的方程得到
+\begin{equation}
+	\frac{1 - X}{X^2} = 3.8 \eta \qty(\frac{k_{\text{B}}T}{m_{\ee}c^2})^{\frac{3}{2}} \ee^{\frac{13.6 \mathrm{eV}}{k_{\text{B}}T}} \equiv S(T)
+\end{equation}
+其中$\eta \equiv \frac{n_{\text{B}, 0}}{n_{\gamma, 0}} = 6 \times 10^{-10}$，等价地有$X(T) = \frac{-1 + \sqrt{1 + 4 S(T)}}{2 S(T)}$
+
+\subsubsection{复合}
+\par 
+Liddle书中定义$T_{\text{rec}}$对应的$X = 0.1$，90\%的电子与质子形成H原子$\Rightarrow$ $k_{\text{B}} T_{\text{rec}} = 0.3 \mathrm{eV}, T_{\text{rec}} \approx 3600 \mathrm{K}$
+\par 
+Ryden定义$X=0.5$ $\Rightarrow$ $k_{\text{B}} T_{\text{rec}} = 0.324 \mathrm{eV} = \frac{I}{42}, T_{\text{rec}} = 3760 \mathrm{K}$，复合能标0.3eV小于$I = 13.6 \mathrm{eV}$
+
+\par 
+由红移和$a$之间的关系$1 + Z = \frac{1}{a(t)}$，又知$a \propto T^{-1}$，故$T = (1 + Z) T_0$，代入$T_0 = 2.7 \mathrm{K}$，得到$Z_{\text{rec}} \approx 1320$，而辐射——物质等量期红移为$Z_{\text{eq}} \simeq 3500$，故复合（以及其后的退耦）发生于物质主导期
+
+\par 
+物质主导$a(t) = \qty(\frac{t}{t_0})^{\frac{2}{3}}$，由$T \propto a^{-1}$可知$t_{\text{rec}} = \frac{t_0}{(1 + Z_{\text{rec}})^{\frac{3}{2}}} \sim 29 \text{万年}$
+
+\subsubsection{退耦}
+\par 
+定义光子的退耦发生于$\Gamma \simeq H$时，其中$\Gamma = n_{\ee} \sigma_{\ee} c$，只有$n_{\ee}$会变化，影响$n_{\ee}$的两个因素：1. 宇宙膨胀；2. 复合过程
+\par 
+由电离度定义$X = \frac{n_{\text{p}}}{n_{\text{B}}} = \frac{n_{\text{e}}}{n_{\text{B}}}$，得到$n_{\ee} = X n_{\text{B}} = X \eta n_{\gamma} = X \eta \beta T^3$，所以有$\Gamma = (X \eta \beta T^3) \sigma_{\ee} c$
+\par 
+为了与$\Gamma$相比较，也要将$H$写成$T$的函数，退耦发生于物质主导期，相应的Friedmann方程为$\frac{H^2}{H^2_0} = \frac{8 \pi G}{3 H_0^2} \rho_{\text{mat}} = \frac{\rho_{\text{mat}, 0}}{\rho_{\text{c}, 0}} a^{-3} = \Omega_{ \text{mat}, 0 } a^{-3}$
+\par 
+所以$H = H_0 \frac{\sqrt{\Omega_{ \text{mat}, 0 }}}{a^{\frac{3}{2}}}$，由$a \propto T^{-1}, aT = a_0 T_0$，得到$H = H_0 \sqrt{\Omega_{ \text{mat}, 0 }} \qty(\frac{T}{T_0})^{\frac{3}{2}}$
+\par 
+因此$\Gamma = H \Rightarrow X(T_{\text{dec}}) T_{\text{dec}}^{\frac{3}{2}} = \frac{H_0 \sqrt{\Omega_{ \text{mat}, 0 }}}{\eta \beta \sigma_{\ee} c T_0^{\frac{3}{2}}}$，最终得到$T_{\text{dec}} \simeq 3060 \mathrm{K}$
+\par 
+退耦后，光子自由传播至今，形成了CMB，重子物质几乎不再与光子发生相互作用，它们不再同温
+
+\par
+CMB光子形成时，其温度大概是3000K，随着宇宙的膨胀，最终冷却到温度为3K的黑体辐射，过程中，光子数密度减少，每个光子的频率都将红移，光子气体的温度下降，但是黑体分布函数保持不变，仍保持黑体谱
+
+\par 
+目前在地球上观测到的CMB光子都来自一个以地球为中心，半径约为$ 6000 h^{-1} $Mpc的球面，称为最终散射面，宇宙中任何观者都有在与之相应的最终散射面（surface of last scattering）
+
+\subsection{宇宙膨胀与黑体谱的保持}
+\par 
+CMB形成后，光子不再发生相互作用，光子数守恒，宇宙膨胀会影响CMB的三个性质：
+\begin{itemize}
+	\item[1. ] 数密度减少，$n \propto a^{-3}$
+	\item[2. ] 每个光子的频率都将发生红移$f \propto a^{-1}$
+	\item[3. ] 光子气体的温度下降$T \propto a^{-1}$
+\end{itemize}
+\par 
+考虑$a \rightarrow a'$的过程，$a$时，频率介于$f$\textasciitilde$f + \dd f$内光子的数密度为$n(f) \dd f = c \frac{f^2 \dd f}{\ee^{\frac{h f}{k_{\text{B}}T}} - 1}$；$a'$时，频率$f \rightarrow f'  = f\frac{a}{a'}$，相应的数密度变为$n(f') \dd f' = n(f) \dd f \qty(\frac{a}{a'})^3 = c \frac{f^2 \dd f}{\ee^{\frac{h f}{k_{\text{B}}T}} - 1} \qty(\frac{a}{a'})^3 = c \frac{f'^2 \dd f'}{\ee^{\frac{h f'}{k_{\text{B}}T'}} - 1}$，故$a'$时仍为黑体谱，CMB是一种遗迹
+
+\subsection{$a,T,E,Z,t$之间的换算关系}
+\par 
+由$a \propto T^{-1}$及红移$a$的关系知$1 + Z = \frac{a_0}{a} = \frac{T}{T_0}$或$a = \frac{1}{1 + Z}, T = (1 + Z) T_0$，能征能量$E \simeq k_{\text{B}} T$
+\par 
+例如，对物质——辐射等量期$a_{\text{eq}} = \frac{\rho_{\text{rad}, 0}}{\rho_{\text{mat}, 0}} \simeq \frac{1}{3500}$，换成其它标尺$T_{\text{eq}} = \frac{2.725 \mathrm{K}}{a_{\text{eq}}} = 9600 \mathrm{K} \approx 10^4 \mathrm{K}$，$E_{\text{eq}} = k_{\text{B}} T \simeq 2.8 \mathrm{eV} \approx 1 \mathrm{eV}$，$Z_{\text{eq}} = \frac{1}{a_{\text{eq}}} -1 \approx 3500$
+
+\par 
+$T$，$E$，$Z$与$a$之间的转换关系与$a(t)$的具体解无关，但若进一步知道$a(t)$的解，还可将上述标尺转换成时间，考虑两种特殊情况：
+\begin{itemize}
+	\item[1. ] 物质主导期，$a > a_{\text{eq}}$或$T < T_{\text{eq}}$ \\
+	此时，$a \propto t^{\frac{2}{3}} \propto T^{-1} \Rightarrow T \propto t^{- \frac{2}{3}}$ \\
+	$\frac{T_{\text{eq}}}{2.725 \mathrm{K}} = \qty(\frac{t_0}{t_{\text{eq}}})^{\frac{2}{3}}$，取$t_0 = 138 \text{亿年}$？不可，因后期$\Lambda$主导，扣除这一影响的话，应取$t_0 = 120 \text{亿年}$，再代入$T_{\text{eq}} = 10^4 \mathrm{K}$，得到$t_{\text{eq}} = 1.8 \times 10^{12} \mathrm{s}$，约为5.7亿年
+	\\
+	同理，已知$T_{\text{rec}} \approx 3600 \mathrm{K}$和$T_{\text{dec}} \equiv 3000 \mathrm{K}$，均发生于物质主导期，$t_{\text{rec}} \simeq 25 \text{万年}, t_{\text{dec}} \simeq 35 \text{万年}$
+	
+	\item[2. ] 辐射主导，$a < a_{\text{eq}}$或$T > T_{\text{eq}}$ \\
+	此时，$a \propto t^{\frac{1}{2}} \propto T^{-1} \Rightarrow T \propto t^{- \frac{1}{2}}$ \\
+	问：此时比例系数如何定？答：用$t_{\text{eq}}$时刻的数值来定 \\
+	$\frac{T}{T_{\text{eq}}} = \qty(\frac{t_{\text{eq}}}{t})^{\frac{1}{2}}$，得到$T(t) \approx 10^{10} \mathrm{K} \qty(\frac{1 \mathrm{s}}{t})^{\frac{1}{2}}$，换成$E$得到$E(t) = k_{\text{B}} T(t) \approx 1 \mathrm{MeV} \qty(\frac{1 \mathrm{s}}{t})^{\frac{1}{2}}$
+	\\
+	宇宙年龄为1s时，$T$为$10^{10} \mathrm{K}$，$E$为1MeV\\
+	LHC $\rightarrow E \simeq 7 \mathrm{TeV}$，相应于$t = 2 \times 10^{-13} \mathrm{s}$
+	\begin{cbox}
+		{在早期，$K$和$\Gamma$对Friedmann方程的贡献是否要考虑？}
+		可以不考虑
+	\end{cbox}
+\end{itemize}
+
+\subsection{原初核合成}
+\begin{table}[!h]
+	\centering
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|c|c|}
+		\hline
+		时间 & 温度 & 宇宙组成和重要事件                                                                                          \\ \hline
+		$t< 10^{-10} \mathrm{s}$  & $T > 10^{15} \mathrm{K}$  & 依赖理论假说                                                                                             \\ \hline
+		$10^{-10} \mathrm{s} < t < 10^{-4} \mathrm{s}$  & $10^{15}\mathrm{K} > T > 10^{12} \mathrm{K}$  & 宇宙由自由$\ee^{-}$，夸克，光子，$\nu$，$\bar{\nu}$组成，粒子间相互作用很强                                                                     \\ \hline
+		$10^{-4} \mathrm{s} < t < 1 \mathrm{s}$  & $10^{12}\mathrm{K} > T > 10^{10}\mathrm{K}$  & 宇宙由$\ee^{-}$，p，n，$\gamma$，$\nu$，$\bar{\nu}$组成，相互作用强                                                                       \\ \hline
+		$1\mathrm{s} < t < 10^{12}\mathrm{s}$  & $10^{10}\mathrm{K}>T>10^4\mathrm{K}$  & \begin{tabular}[c]{@{}c@{}}质子与中子结合成原子核，宇宙组成$\ee^-$，原子核，$\gamma$，$\nu$，$\bar{\nu}$\\ 除中微子之外彼此相互作用很强，仍处于辐射主导\end{tabular} \\ \hline
+		$10^{12}\mathrm{s} < t < 10^{13} \mathrm{s}$  & $10^4\mathrm{K} >T > 3000\mathrm{K}$  & 宇宙组成同上，但为物质主导                                                                                      \\ \hline
+		$10^{13}\mathrm{s}<t<t_0$  & $3000\mathrm{K}>T>3\mathrm{K}$  & $\ee^-$与原子核结合形成中性原子，光子退耦，形成CMB                                                                           \\ \hline
+	\end{tabular}
+	}
+	\caption{宇宙组成发展表}
+\end{table}
+
+\subsubsection{弱作用与质子——中子平衡}
+\par 
+考虑某个$k_{\text{B}} T \gtrsim 1 \mathrm{MeV}$的时刻，此时除了光子和中微子外，电子（0.5MeV）也是相对论性的，而质子（938.3MeV）和中子（939.6MeV）仍是非相对论的
+\par 
+此时弱相互作用（主要特征：有中微子参与）很频繁：
+$$
+\begin{cases}
+	\text{n} + \nu_{\ee} \leftrightarrow \text{p} + \ee^- \\
+	\text{n} + \ee^+ \leftrightarrow \text{p} + \overline{\nu_{\ee}} \qq{质子与中子处于平衡态} \\
+	\text{n} \leftrightarrow \text{p} + \ee^- + \overline{\nu_{\ee}} \\
+\end{cases}
+$$
+\par 
+非相对论粒子平衡时的数密度为$n_i = g_i \qty(\frac{m_i k_{\text{B}} T }{2 \pi \hbar^2})^{\frac{3}{2}} \ee^{\frac{(\mu_i - m_i) c^2}{k_{\text{B}} T}}$，化学平衡条件为$\mu_\nu + \mu_{\text{n}} = \mu_{\text{p}} + \mu_{\ee^-}$，假设电子和中微子的化学势可以忽略，则$\mu_{\text{n}} = \mu_{\text{p}}$，因此$\frac{n_{\text{n}}}{n_{\text{p}}} = \qty(\frac{m_{\text{n}}}{m_{\text{p}}})^\frac{3}{2} \exp[\frac{(\mu_{\text{n}} - \mu_{\text{p}}) - (m_{\text{n}} - m_{\text{p}}) c^2}{k_{\text{B}} T}]$，即$\frac{n_{\text{n}}}{n_{\text{p}}} = \ee^{-\frac{\Delta m c^2}{k_{\text{B}} T}}$，其中$\Delta m = m_{\text{n}} - m_{\text{p}} = 1.3 \mathrm{MeV} /c^2$
+\par 
+显然，当$k_{\text{B}} T \gg 1 \mathrm{MeV}$时，$n_{\text{n}} \simeq n_{\text{p}}$；但在$k_{\text{B}} T \ll 1 \mathrm{MeV}$时，$n_{\text{n}} < n_{\text{p}}$
+
+\subsubsection{中微子退耦/冻结（freeze-out）}
+\par 
+质子——中子平衡的建立依赖正、反中微子的参与，弱相互作用的反应速率$\Gamma = n_{\nu} \sigma_{W} c$，其中，中微子数密度$n_{\nu} \propto a^{-3} \propto t^{-\frac{3}{2}}$（不存在类似复合的过程）；$\sigma_W \sim 10^{-47} \mathrm{m^2} \qty(\frac{k T}{1 \mathrm{MeV}})^2$，由$T \propto a(t)^{-1} \propto t^{-\frac{1}{2}}$得到$\sigma_{W} \propto t^{-1}$
+\par 
+因此$\Gamma \propto t^{-\frac{5}{2}}$，而辐射主导期$H \propto t^{-1}$，可以想象，即使一开始$\Gamma \gg H$，但由于$\Gamma(t)$比$H(t)$下降得更快，必然会有某一时刻使得$\Gamma \sim H$
+\par 
+精确的计算表明冻结温度$k_{\text{B}} T_{\text{fr}} \simeq 0.8 \mathrm{MeV}, T_{\text{fr}} \simeq 10^{10} \mathrm{K}, t_{\text{fr}} \simeq 1 \mathrm{s}$，在该时刻中微子与n、p退耦，从而导致比值$\frac{n_{\text{n}}}{n_{\text{p}}}$“冻结”（freeze）：$\eval{\frac{n_{\text{n}}}{n_{\text{p}}}}_{\text{fr}} \approx \ee^{-\frac{1.3}{0.8}} \approx \frac{1}{5} $
+
+\begin{itemize}
+	\item[1. ] 冻结时中子数比质子数少，使得核合成不能完全进行，最后仍有$3/4$的重子是质子，这些剩余的质子将在复合时期与电子结合形成氢原子
+	
+	\item[2. ] 冻结后至核合成之前的时间内，自由中子会衰变成质子，这将使得$\eval{\frac{n_{\text{n}}}{n_{\text{p}}}}{t_{\text{fr}}} \rightarrow \frac{n_{\text{n}}(t)}{n_{\text{p}}(t)}$，其中$n_{\text{n}}(t) \approx \frac{1}{5} n_{\text{p}}(t_{\text{fr}}) \ee^{-\frac{t}{\tau_{\text{n}}}}, n_{\text{p}}(t) = n_{\text{p}}(t_{\text{fr}}) + [n_{\text{n}}(t_{\text{fr}}) - n_{\text{n}}(t)]$，计算可得$\frac{n_{\text{n}}(t)}{n_{\text{p}}(t)} = \frac{\ee^{-\frac{t}{\tau_{\text{n}}}}}{5 + [1 - \ee^{-\frac{t}{\tau_{\text{n}}}}]}$，自由中子的平均寿命为$\tau_{\text{n}} \approx 880 \mathrm{s}$
+\end{itemize}
+
+\subsubsection{氘核合成}
+\par 
+核合成的第一步（最重要、最关键的一步）是1个质子和1个中子通过强相互作用（效率高）形成氘（deuterium）：$\text{p} + \text{n} \leftrightarrow \text{D} + \gamma$
+\par 
+与该反应相应的Saha方程为：
+$$
+\frac{n_{\text{D}}}{n_{\text{p}} n_{\text{n}}} = \frac{g_{\text{D}}}{g_{\text{p}} g_{\text{n}}} \qty(\frac{m_{\text{D}}}{m_{\text{p}} m_{\text{n}}})^{\frac{3}{2}} \qty(\frac{kT}{2 \pi \hbar^2})^{-\frac{3}{2}} \ee^{\frac{(m_{\text{p}}+m_{\text{n}}-m_{\text{D}}) c^2}{k T}}
+$$
+这里用了$g_{\text{n}} = g_{\text{p}} = 2, g_{\text{D}} = 3$，束缚能为$(m_{\text{p}}+m_{\text{n}}-m_{\text{D}}) c^2 = B_{\text{D}} \approx 2.2 \mathrm{MeV}$，乘积因子可以使用近似$m_{\text{n}} \approx m_{\text{p}} \approx \frac{1}{2} m_{\text{D}}$
+\par 
+在氘合成之前（中微子刚退耦时），$\eval{\frac{n_{\text{n}}}{n_{\text{p}}}}_{t_{\text{fr}}} \approx \frac{1}{5} \Rightarrow \eval{\frac{n_{\text{n}}}{n_{\text{B}}}}_{t_{\text{fr}}} \approx \frac{5}{6}$，故$n_{\text{p}} \approx 0.8n_{\text{B}} = 0.8 \eta n_{\gamma} = 0.8 \eta \qty[0.2436 \qty(\frac{kT}{\hbar c})^3]$，最终得到：
+$$
+\frac{n_{\text{D}}}{n_{\text{n}}} \approx 6.5 \eta \qty(\frac{kT}{m_{\text{n}}c^2})^{\frac{3}{2}} \ee^{\frac{B_{\text{D}}}{k T}}
+$$
+\par 
+\textbf{定义：}氘合成发生的时刻为$\frac{n_{\text{D}}}{n_{\text{n}}} = 1$，即已有一半的中子已经与质子结合成氘核的时刻（这里的$n_{\text{n}}$是自由的中子数密度，而不是总中子数密度）
+
+\par 
+由$m_{\text{n}} c^2 = 939.6 \mathrm{MeV}$，$B_{\text{D}} = 2.22 \mathrm{MeV}$以及$\eta = 6.1 \times 10^{-10}$可算出氘核合成开始的温度为$T_{\text{nuc}} \approx 7.6 \times 10^8 \mathrm{K}$，相应的能量为$k T_{\text{nuc}} \approx 0.066 \mathrm{MeV} \approx \frac{B_{\text{D}}}{34}$，对应的宇宙年龄$t_{\text{nuc}} \approx 200 \mathrm{s}$
+
+\par 
+从$t_{\text{fr}} \simeq 1 \mathrm{s}$到氘合成$t_{\text{nuc}} \approx 200 \mathrm{s}$这段时间内，由于中子的衰变使得中子——质子数密度之比由$\eval{\frac{n_{\text{n}}}{n_{\text{p}}}}_{t_{\text{fr}}} \approx \frac{1}{5}$变为$\eval{\frac{n_{\text{n}}}{n_{\text{p}}}}_{t_{\text{nuc}}} = \frac{\ee^{-\frac{t}{\tau_{\text{n}}}}}{5 + [1 - \ee^{-\frac{t}{\tau_{\text{n}}}}]} \approx 0.15$
+
+\par 
+核合成后中子将全部留在${}^4\text{He}$核内，可以由$\eval{\frac{n_{\text{n}}}{n_{\text{p}}}}_{t_{\text{nuc}}}$的值计算出最终${}^4\text{He}$原子质量占中子物质总质量的百分比，记为$Y_{\text{p}} \equiv \frac{m_{{}^4\text{He}}}{m_{\text{B}}} = \frac{2n_{\text{n}}}{n_{\text{n}} + n_{\text{p}}} \approx 0.27$
+
+\subsubsection{氦核形成}
+\par 
+氦核的形成是以氘核的积累为前提条件的，这是因为多体核反应发生的概率远低于两体反应，所以在氘核数量足够时，更重的氚${}^3\mathrm{H}$与氦-3核就可以通过以下反应形成：
+$$
+\begin{cases}
+	\text{D} + \text{p} \rightleftharpoons {}^3\text{He} + \gamma \\
+	\text{D} + \text{n} \rightleftharpoons {}^3\text{H} + \gamma \\
+	\text{D} + \text{D} \rightleftharpoons {}^3\text{H} + \text{p} \\
+	\text{D} + \text{D} \rightleftharpoons {}^3\text{He} + \text{n} 
+\end{cases}
+$$
+而${}^3\text{H}$和${}^3\text{He}$形成后，会立即通过下列反应转变成${}^4\text{He}$：
+$$
+\begin{cases}
+	{}^3\text{H} + \text{p} \rightleftharpoons {}^4\text{He} + \gamma \\
+	{}^3\text{He} + \text{n} \rightleftharpoons {}^4\text{He} + \gamma \\
+	{}^3\text{H} + \text{D} \rightleftharpoons {}^4\text{He} + \text{n} \\
+	{}^3\text{He} + \text{D} \rightleftharpoons {}^4\text{He} + \text{p} 
+\end{cases}
+$$
+这些反应都涉及强相互作用，具有较大的散射截面和较快的反应速率，因此，一旦核合成开始后，D、${}^3\text{H}$、${}^3\text{He}$都会极快地转变成${}^4\text{He}$
+\begin{cbox}
+	{能否通过${}^4\text{He}$进一步形成更重的核？}
+	不能！不存在质量数为5的稳定的核，所以只能由${}^4\text{He}$形成${}^6\text{Li}$、${}^7\text{Li}$：${}^4\text{He} + \text{D} \rightleftharpoons {}^6\text{Li} + \gamma, {}^4\text{He} + {}^3\text{H} \rightleftharpoons {}^7\text{Li} + \gamma$；以及少量的铍：${}^4\text{He} + {}^3\text{He} \rightleftharpoons {}^7\text{Be} + \gamma$
+\end{cbox}
+
+
+\textbf{小结：}
+\begin{itemize}
+	\item[1. ] 在$t < 10 \mathrm{s}, T > 3 \times 10^9 \mathrm{K}$时，几乎所有的重子物质都以自由质子和中子的形式存在
+	\item[2. ] 核合成在$t \sim 1000 \mathrm{s}$时基本结束，重子物质的主要形式是自由质子和${}^4\text{He}$，一小部分剩余的自由中子将衰变成质子，剩下少量D、${}^3\text{H}$、${}^3\text{He}$（${}^3\text{H}$随后衰变成	${}^3\text{He}$）和极少数的${}^6\text{Li}$、${}^7\text{Li}$、${}^7\text{Be}$
+\end{itemize}
+
+
+\subsubsection{元素丰度与$\eta$}
+\par 
+BBN元素的丰度依赖于很多理论参数，其中最重要的是重子——光子数密度之比$\eta$
+$$
+\frac{n_{\text{D}}}{n_{\text{n}}} \approx 6.5 \eta \qty(\frac{k T}{m_{\text{n}} c^2})^{\frac{3}{2}} \ee^{\frac{B_{\text{D}}}{k T}}
+$$
+\par 
+由于$\eta$的数值很小，氘核合成需要在$kT \ll B_{\text{D}}$时才能大量进行，而氘核的合成又是进行后续核合成反应的前提，因此这一事实被称为氘瓶颈
+\par 
+若以$\eta$作为参数，可计算出各种轻元素最终丰度随$\eta$的变化，$\eta$的值的增加会使核合成温度$T_{\text{nuc}}$增加，使BBN发生得更早，进而增加${}^4\text{He}$的产额（核合成发生得越早，衰减的中子数越少），而减少D、${}^3\text{He}$的数量
+\par 
+${}^7\text{Li}$对$\eta$的依赖更为复杂：由反应${}^4\text{He} + {}^3\text{H} \rightleftharpoons {}^7\text{Li} + \gamma$生成的${}^7\text{Li}$是$\eta$的减函数；而由铍通过电子俘获${}^7\text{Be} + \ee^- \rightleftharpoons {}^7\text{Li} + \nu_{\ee}$生成的${}^7\text{Li}$是$\eta$的增函数。这两个因素使得${}^7\text{Li}$的预言值在$\eta \approx 3 \times 10^{-10}$处有一极小值
+\par 
+为了利用BBN的理论预言确定$\eta$的值，需要精确地测量轻元素的原初（即恒星核反应之前的）丰度
+\par 
+从理论丰度图中可看出原初D丰度对$\eta$的依赖最敏感，观测结果得到$\eta = (6.0 \pm 0.1) \times 10^{-10}$，这与CMB的观测结果相容
+
+\subsubsection{总结与讨论}
+\par 
+宇宙中轻元素的丰度为热大爆炸理论提供了最终也最为有力的证据
+
+\begin{table}[!h]
+	\tiny
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& 核合成                                                            & 退耦              \\ \hline
+		时间   & 大爆炸后几分钟                                                        & 大爆炸后30万年        \\ \hline
+		温度   & $10^{10}$K                                                          & 3000K           \\ \hline
+		典型能量 & 1MeV                                                           & 1eV             \\ \hline
+		过程   & \begin{tabular}[c]{@{}c@{}}质子与中子结合成原子核，\\ 电子仍是自由的\end{tabular} & 原子核与电子结合形成原子    \\ \hline
+		光子   & 继续与原子核和电子相互作用                                                  & 不再发生相互作用，形成背景辐射 \\ \hline
+	\end{tabular}
+	\caption{退耦与核合成的对比表}
+\end{table}
+
+
+
+\subsection{暴涨Inflation}
+\par 
+上一讲提到，原初核合成发生于大爆炸后几秒内，理论给出的预言与观测符合的很好。然而在更早的时间尺度上，标准的大爆炸理论遇到一些困难。为了解决这些困难，我们需要假设宇宙的极早期存在一个时间极短的加速膨胀的阶段——暴涨
+\par 
+暴涨结束后，宇宙按标准大爆炸理论描述的过程继续演化
+
+
+\subsubsection{大爆炸理论存在的一些疑难}
+\begin{itemize}
+	\item[A. ] 平直疑难（The flatness problem） \\
+	由CMB、BAO和超新星等独立的观测数据表明$\Omega_{\text{tot}, 0} = \Omega_{0} + \Omega_{\Lambda, 0} \simeq 1 \Rightarrow$空间几何近似平坦 \\
+	由Friedmann方程得到$\Omega_{\text{tot}} - 1 = \frac{kc^2}{a^2 H^2}$，可以看出$\Omega_{\text{tot}} = \frac{\rho_{\text{tot}}}{\rho_c}$本身随时间变化 \\
+	如果$\Omega_{\text{tot}} = 1$，则$k = 0$，空间始终平坦 \\
+	然而$\Omega_{\text{tot}}$只是近似等于1，那么$\abs{\Omega_{\text{tot}} - 1}$将随时间变化，考虑两种情况：
+	\begin{itemize}
+		\item[1)] 物质主导$a(t) \propto t^{\frac{2}{3}}, H(t) = \frac{2}{3t} \Rightarrow \abs{\Omega_{\text{tot}}(t) - 1} = \frac{\abs{k}}{a^2 H^2} \propto t^{\frac{2}{3}}$ \\
+		以$t_0 = 4 \times 10^{17} \mathrm{s}, \abs{\Omega_{\text{tot}}(t_0) - 1} < 0.005$，考虑两个时间点：退耦时期$t_{\text{dec}} \simeq 10^{13} \mathrm{s}, \abs{\Omega_{\text{tot}}(t_{\text{dec}}) - 1} < 10^{-5}$；物质辐射等量期$t_{\text{eq}} \simeq 10^{12} \mathrm{s}, \abs{\Omega_{\text{tot}}(t_{\text{eq}}) - 1} < 10^{-6}$
+		\item[2)] 辐射主导$a(t) \propto t^{\frac{1}{2}}, H(t) = \frac{1}{2t} \Rightarrow \abs{\Omega_{\text{tot}}(t) - 1} = \frac{\abs{k}}{a^2 H^2} \propto t$ \\
+		例子：核合成时期$t_{\text{nuc}} \simeq 1 \mathrm{s}, \abs{\Omega_{\text{tot}}(t_{\text{nuc}}) - 1} < 10^{-18}$；电弱对称破缺时$t_{\text{EW}} \simeq 10^{-12} \mathrm{s}, \abs{\Omega_{\text{tot}}(t_{\text{EW}}) - 1} < 10^{-30}$
+	\end{itemize}
+	显然对这两种情况而言，$\abs{\Omega_{\text{tot}}(t) - 1}$均随$t$单调递增，说明处于平直几何是宇宙所处的一种不稳定状态，任何对平直时空小的偏离都会使曲率项越来越大，说明宇宙早期更平直，这样一个依赖于精细调节（fine-tuning）的初始条件显然不太自然，最好能从理论上找到解释，为什么宇宙中一个接近平坦开始演化
+	
+	\item[B. ] 视界疑难（The horizon problem） \\
+	按照大爆炸理论，宇宙年龄有限，光速有限$\Rightarrow$可观测宇宙有限 \\
+	由CMB观测，早期宇宙是近均匀且各向同性的（具有相同的温度$T_0 = 2.725 \mathrm{K}$），具有相同温度说明当时的宇宙处于热平衡状态（指decouple时刻）
+	\begin{itemize}
+		\item[1)] 假设宇宙一直处于物质主导$a(t) \propto t^{\frac{2}{3}}$，取$H_0 = 100 \mathrm{km \cdot s^{-1} \cdot Mpc^{-1}} \simeq 10^{-10} \mathrm{year^{-1}}$，则宇宙年龄$t_0 = \frac{1}{H_0} \simeq 10^{10} \mathrm{year}$，可计算出大爆炸至今，光子所能传播的最远距离$c t_0 \simeq 3000 \mathrm{Mpc}$，即为当前可观测宇宙的半径
+		\item[2)] 在CMB形成时的退耦时刻，尺度因子均为当前的千分之一$\frac{a_0}{a_{\text{dec}}} \simeq 1000 = \qty(\frac{t_0}{t_{\text{dec}}})^{\frac{2}{3}} \Rightarrow t_{\text{dec}} = 10^{\frac{11}{2}} \mathrm{year}$，从大爆炸到退耦时光子能传播的最大距离$l_{\text{dec}} = c t_{\text{dec}} \simeq 0.095 \mathrm{Mpc}$，即为退耦时可观测宇宙的半径
+		\item[3)] 在共动坐标系下看，与$l_{\text{dec}}$相应的半径目前的物理尺度为$\frac{l_{\text{dec}}}{a_{\text{dec}}} a_0 = 1000 l_{\text{dec}} = 95 \mathrm{Mpc}$，近似取我们与CMB形成时最终散射面的距离为3000Mpc，在最终散射面上，退耦时的视界半径仅有95Mpc，对应张角为$2^{\circ}$
+	\end{itemize}
+	上面的估算表明，在最终散射面上，只有夹角为$2^{\circ}$以内的区域是具有因果关系的，可以达到平衡而具有相同温度，所以很难理解为何整个散射面上具有相同温度 \\
+	另一方面，CMB存在很小的各向异性，这些不规则的小涨落是随后形成星系结构的种子，标准的大爆炸理论也无法解释这些不规则涨落的形成
+	
+	\item[C. ] 重粒子残留丰度疑难 \\
+	辐射在宇宙开始后的一千年内曾占主导地位，由于辐射随尺度因子的衰减比非相对论物质快，所以若宇宙极早期存在少量非相对论物质，它们将很快占主导，但这种重粒子不在标准模型中 \\
+	不同的理论有不同的重粒子，典型代表：
+	\begin{itemize}
+		\item[1)] 大统一理论（特征能量$\sim 10^{16} \mathrm{GeV}$）的磁单极子
+		\item[2)] 超引力理论的引力微子（Gravitino，质量约为100Mev，自旋为3/2）
+		\item[3)] 超弦理论的moduli，自旋为0
+	\end{itemize}
+	由于这些粒子的质量很大，它们可能会在极早期宇宙产生，并且很快变成非相对论性的 \\
+	以磁单极子为例，假设在大统一能标（$T = 3 \times 10^{28} \mathrm{K}$）产生了密度为$\Omega_{\text{mon}} = 10^{-10}$的磁单极子，假设宇宙具有临界密度且始终为辐射主导，则有$\frac{\Omega_{\text{mon}}}{\Omega_{\text{rad}}} \propto a \propto \frac{1}{T}$，为定系数，可用磁单极子产生时刻$\eval{\frac{\Omega_{\text{mon}}}{\Omega_{\text{rad}}}}_{T = 3 \times 10^{28} \mathrm{K}} = 10^{-10} \Rightarrow T = 3 \times 10^{18} \mathrm{K}$，此时磁单极子与辐射密度相等；而当前宇宙$T_0 = 3 \mathrm{K} \Rightarrow \eval{\frac{\Omega_{\text{mon}}}{\Omega_{\text{rad}}}}_{T = 3  \mathrm{K}} = 10^{18}$，这显然与观测不符
+\end{itemize}
+
+\subsubsection{暴涨}
+\par 
+1981年Alan Guth提出的解决上述疑难的一种方案——暴涨
+\par 
+本质上，暴涨就是宇宙演化的一个非常快速的加速膨胀时期，Inflation$\Leftrightarrow \ddot{a}(t) > 0$
+\par 
+由加速度方程$\frac{\ddot{a}}{a} = - \frac{4 \pi G}{3} \qty(\rho + \frac{3 p}{c^2})$知道，加速膨胀要求$\rho c^2 + 3p < 0$，质量密度恒为正，故$p < - \frac{\rho c^2}{3}$
+\par 
+满足加速膨胀条件的一个最简单模型就是宇宙学常数模型，响应的Friedmann方程为$H^2 = \frac{\Lambda}{3}$，解为$a(t) = \ee^{\sqrt{\frac{\Lambda}{3}} t}$，注意，在这一模型中，$H = \text{const}$
+
+\par 
+暴涨不能永远持续下去，所以暴涨需要有一个终结（graceful exit）。理论上认为最终宇宙学常数中的能量（通过衰变）传递给了普通物质，暴涨终结后，标准大爆炸理论的其他过程陆续开始展开，只要暴涨发生的足够早，就不会对热大爆炸的成功预言产生影响。一般的暴涨模型都假设暴涨发生的时间为$10^{-34} \mathrm{s}$左右，能量为大统一能标$10^{16} \mathrm{GeV}$
+
+\subsubsection{大爆炸疑难的解决}
+\begin{itemize}
+	\item[A. ] 平直疑难：存在该问题是因为$\abs{\Omega_{\text{tot}} - 1} = \frac{\abs{k}}{a^2 H^2}$随$t$单调增加 \\
+	暴涨理论反其道而行之，因为$\ddot{a} > 0 \Rightarrow \dv{\dot{a}}{t} > 0 \Rightarrow \dv{t}(a H) > 0$，故$\frac{\abs{k}}{a^2 H^2}$随时间递减 \\
+	特别地，对指数膨胀有$\abs{\Omega_{\text{tot}}(t) - 1} \propto \ee^{- \sqrt{\frac{4 \Lambda}{3} t}}$ \\
+	暴涨过程使得$\Omega_{\text{tot}}$极其接近于1，以至于从暴涨结束后到目前为止，宇宙的膨胀都不足以使明显地偏离1，因此我们才观测到一个近乎平直的宇宙 \\
+	\begin{tikzpicture}[global scale = 0.7]
+		\draw[->,black] (0, 0) -- (9, 0);
+
+		\draw[black] (0, - 1pt) -- (0, + 1pt) node[anchor=east] {$0$};
+		\draw[black] (9.2, 0) node[anchor=west] {$\Omega_0$};
+		\draw[->,black] (0, 0) -- (0, 4);
+
+		\draw[black] (0, 4.2) node[anchor=west] {$\log \Omega_{\text{tot}}$};
+		
+		\draw[->,black] (1.5, -1) -- (1.5, -0.3) node[anchor=north,align=center] at (1.5, -1) {Start of \\ inflation};
+		\draw[->,black] (5, -1) -- (5, -0.3) node[anchor=north,align=center] at (5, -1) {End of \\ inflation};
+		\draw[->,black] (7, -1) -- (7, -0.3) node[anchor=north, align=center] at (7, -1) {Present \\ day};
+		\draw[->,black] (8.5, -1) -- (8.5, -0.3) node[anchor=north, align=center] at (8.5, -1) {Distant \\ future};
+		
+		\draw[thick, dashed] (1, 2.5) .. controls (1.2, 2.85) .. (1.5, 3);
+		\draw[thick] (1.5, 3) .. controls (2.2, 3) and (2.8, 0.3) .. (4, 0);
+		\draw[thick] (4, 0) -- (8.2, 0);
+		\draw[thick] (8.2, 0) .. controls (8.3, 0) and (8.7, 0.1) .. (8.9, 0.5);
+		
+		
+	\end{tikzpicture}
+	
+	\item[B. ] 视界疑难：考虑暴涨前宇宙的一个足够小的区域9，该区域小到其内部足以达到热平衡 \\
+	暴涨后，这个小区域被扩大了很多倍，其尺度甚至比我们当前的可观测宇宙还要大，因此在不同方向看到的温度都一样 \\
+	\begin{tikzpicture}[global scale = 0.7]
+		\draw [fill, color=black!14!white] (0,0) ellipse [x radius=0.5*1.5cm, y radius=0.5*0.3cm];
+		
+		\draw [fill, color=black!14!white] (0,5) ellipse [x radius=4.5cm, y radius=1.2cm];
+		\draw [fill, color=gray] (0,5) ellipse [x radius=1.5cm, y radius=0.3cm];
+		
+		\draw[gray] (0,0) ellipse [x radius=0.5*1.5cm, y radius=0.5*0.3cm];
+		
+		\draw[gray] (0,5) ellipse [x radius=4.5cm, y radius=1.2cm];
+		\draw[gray] (0,5) ellipse [x radius=1.5cm, y radius=0.3cm];
+		
+		\draw (0.75, 0) .. controls (0.8, 2) and (0.9, 3) .. (3.02, 4.12);
+		\draw (-0.75, 0) .. controls (-0.8, 2) and (-0.9, 3) .. (-3.02, 4.12);
+		
+		\draw[dotted] (3.02, 4.12) .. controls (4.4, 4.95) .. (4.5, 5);
+		\draw[dotted] (-3.02, 4.12) .. controls (-4.4, 4.95) .. (-4.5, 5);
+		
+		
+		\draw[black] (0, 2.8) node[anchor=north, align=center] {INFLATION};
+		\draw[thick, ->,black] (-3, 1) -- (-3, 2) node[anchor=west, align=center] at (-3, 1.5) {Time};
+		
+		\draw[->,black] (1.5, 1) .. controls (0.7, 0.8) and (0.4, 0.3)  .. (0.3, 0.2) node[anchor=west, align=center] at (1.5, 1) {Original small region};
+		
+		\draw[->,black] (1.5, 6.5) .. controls (0.7, 6.3) and (0.4, 5.8)  .. (0.3, 5.4) node[anchor=west, align=center] at (1.5, 6.5) {Our Universe};
+	\end{tikzpicture}
+	
+	\item[C. ] 重粒子残留丰度疑难：由于暴涨使得尺度因子膨胀了很多倍，这些极早期宇宙产生的重粒子的密度将被稀释到一个很小的值 \\
+	但是要保证在暴涨结束后，宇宙学常数衰变的过程中不会再度产生这些“问题粒子”，这就要求暴涨结束时宇宙的温度不能太高
+	
+\end{itemize}
+
+\subsubsection{对暴涨过程的估算}
+\par 
+以平直疑难为例，做如下五点假设：
+\begin{itemize}
+	\item[1. ] 暴涨终结于$10^{-34} \mathrm{s}$
+	\item[2. ] 暴涨按指数膨胀方式进行
+	\item[3. ] 从暴涨结束至今，宇宙是辐射主导的：$a(t) = \qty(\frac{t}{t_0})^{\frac{1}{2}}, H(t) = \frac{1}{2t}, \abs{\Omega_{\text{tot}}(t) - 1} = \frac{\abs{k}}{a^2 H^2} \propto t^{-1} \cdot t^2 \propto t$
+	\item[4. ] 在暴涨开始之时$\Omega_{\text{tot}}$并非远远大于1
+	\item[5. ] 假设当前时刻$\abs{\Omega_{\text{tot}} - 1} \leqslant 0.1$
+\end{itemize}
+\par 
+辐射主导期有$\abs{\Omega_{\text{tot}}(t) - 1} \propto t$，当前宇宙的年龄约为$t_0 = 4 \times 10^{17} \mathrm{s}$，且$\abs{\Omega_{\text{tot}}(t_0) - 1} \leqslant 3 \times 10^{-53}$
+\par 
+在暴涨阶段$H$为常数，因此$\abs{\Omega_{\text{tot}}(t) - 1} \propto a^{-2}$，要达到暴涨结束时的值，需要尺度因子膨胀至少$10^{27}$倍
+\par 
+假设暴涨持续的时间为$10^{-36}$ \textasciitilde $10^{-34} \mathrm{s}$，若按照$t = H^{-1} = 10^{-36} \mathrm{s}$来估算暴涨阶段$H$的值，则$\frac{a_{\text{final}}}{a_{\text{initial}}} \simeq \ee^{H(t_{\text{final}} - t_{\text{initial}})} = \ee^{99} \simeq 10^{43}$，暴涨几乎在瞬间完成
+
+
+\subsubsection{暴涨与粒子物理}
+\par 
+简单地引入一个宇宙学常数来描述暴涨，并假设暴涨结束后它将衰变是一种很生硬的做法，一个好的暴涨模型应该包括宇宙学常数的合理起源，和能使暴涨自然结束的方案。为了不破坏标准大爆炸理论的关于核合成等结果的预言，暴涨最晚必须在宇宙年龄为1s之前结束。大多数的暴涨模型都假设暴涨发生的时间远远早于1s，相应的能量一般很高，需要用到粒子物理学的知识
+
+\par 
+暴涨开始和结束时，宇宙的性质都将发生实质的变化，可以用相变来描述暴涨。相变一般由标量场来描述，标量场可以具有负压强，满足暴涨的条件。相变结束后，标量场可以衰变使得暴涨结束。暴涨理论是当前宇宙学研究的一个热点，大多数研究都假设暴涨由标量场描述。早期模型集中于大统一相变（强与电弱相互作用分开，$E\sim 10^{16} \mathrm{GeV}, t\sim 10^{-34} \mathrm{s}$），最近的暴涨模型主要来自超对称理论。超对称是玻色子与费米子之间的对称。超对称相变后，粒子及其伴子的性质开始不同
