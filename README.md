@@ -1,13 +1,30 @@
-# Lost
+# Lost-R18
+
 个人杂物  
 Personal sundries
 
-
 ## 说明
-个人写的一些东东，如果是代码，大部分都是我自己写的，但也有可能抄改了一部分代码，所以没有设置License，个人用没有任何问题；如果是文档，一般是笔记、感想什么的，也有可能这里会被我当成Blog也说不定，这些都不遵从任何知识共享协议，看看用用没关系。但无论如何，禁止商用。
 
-本项目基本上是不允许PR的，如果我不愿意也不会提供后续解释、翻译、修订、使用教程什么的，同时不保证提供的程序、文档的正确性。
+请确保您已年满18岁（不满也行
 
+### Games
+
+一些小游戏的大体信息和评价，攻略一般没有，都是直接开挂的
+
+常用工具列举：
+
+- RMModify - RPGVX 存档修改器
+- JoiPlay - Android上的模拟器，自带作弊器
+- [Save Editor Online](https://www.saveeditonline.com/)
+- GARbro - 资源解包神器
+- rvdata2json - 转rvdata文件的，其实并不太好用
+- 基于`lz-string.js`自己随便写的存档加解密脚本，RMModify无效时一般就有用了
+- AssetStudio - Unity资源解包
+- EnigmaVBUnpacker - Enigma壳脱壳
+- RPG_Maker_MV_MZ_Decrypter - 有的时候有用的解包器
+- dnSpy - Unity没加密直接起飞
+- IDA Pro - 终极大杀器，主要是静态逆向
 
 ## License
+
 No License
