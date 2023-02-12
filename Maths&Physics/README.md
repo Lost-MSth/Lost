@@ -1,11 +1,11 @@
 # Maths&Physics
+
 数学与物理模块
 
 - MATLAB文件是GB2312编码
-- LaTex没有编译，各种依赖请自行解决
+- LaTeX没有编译，各种依赖请自行解决
 
-
-```
+```plain
 Maths&Physics
 ├─ CUPT计时器.pyw     // 当年打比赛写的，CUPT/IYPT都可以用
 ├─ matlab_EularConst.m     // 数学实验作业
