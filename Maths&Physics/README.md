@@ -1,9 +1,9 @@
-# Maths&Physics
+# Maths & Physics
 
 数学与物理模块
 
-- MATLAB文件是GB2312编码
-- LaTeX没有编译，各种依赖请自行解决
+- MATLAB 文件是 GB2312 编码
+- LaTeX 没有编译，各种依赖请自行解决
 
 ```plain
 Maths&Physics
@@ -19,6 +19,7 @@ Maths&Physics
 │  ├─ chapter_5.tex
 │  └─ note.tex
 ├─ 电子云绘制.py
+├─ 本科毕设论文代码  // 说明详见内部 README
 └─ 计算物理期末     // 考试题，大概是什么写在文件开头了
    ├─ T1.m
    ├─ T2.m
