@@ -1,0 +1,82 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data
+spec:
+  resources:
+    requests:
+      storage: 64Gi
+  accessModes:
+    - ReadWriteMany
+  storageClassName: wm2-nfs
+
+---
+
+apiVersion: jobset.x-k8s.io/v1alpha2
+kind: JobSet
+metadata:
+  name: hpcgame-test-fire # Replace with your jobname
+spec:
+  network:
+    enableDNSHostnames: true
+    subdomain: hpcgame-test-fire
+  replicatedJobs:
+    - name: workers
+      replicas: 1 # Should distributed to 4 nodes
+      template: # Describe a job replica
+        spec:
+          backoffLimit: 0
+          completions: 4 # 4 pods
+          parallelism: 4 # 4 pods
+          template: # Describe a pod
+            metadata:
+              annotations:
+                ssh-operator.lcpu.dev/inject: enabled # turn to `enabled` if you want to use SSH.
+                lxcfs.lcpu.dev/inject: disabled # Turn to `enabled` if you want to use LxcFs.
+                k8s.v1.cni.cncf.io/networks: default/wm2-roce # Enable MPI
+            spec:
+              nodeSelector:
+                # Available pre-defined nodes:
+                # x86, x86_amd, arm, gpu, npu, npu_inf
+                hpc.lcpu.dev/partition: x86
+
+              # Uncomment these to force to run on different nodes
+              # ------------ BEGIN ------------
+              affinity:
+                podAntiAffinity:
+                  requiredDuringSchedulingIgnoredDuringExecution:
+                    - topologyKey: "kubernetes.io/hostname"
+                      labelSelector:
+                        matchExpressions:
+                          - key: jobset.x-k8s.io/name
+                            operator: In
+                            values:
+                              - hpcgame-test-fire22
+              # ------------ END ------------
+
+              containers: # Describe a container inside a pod
+                - name: worker
+                  securityContext:
+                    capabilities:
+                      add: ["IPC_LOCK"] # For MPI
+                  # `fire` requires Intel environment
+                  image: crmirror.lcpu.dev/hpcgame/intel:latest
+                  command:
+                    - sleep
+                    - inf
+                  resources:
+                    limits:
+                      cpu: 1
+                      memory: 4Gi
+                      rdma.hpc.lcpu.dev/hca_cx5: 1
+                    requests:
+                      cpu: 1
+                      memory: 4Gi
+                      rdma.hpc.lcpu.dev/hca_cx5: 1
+                  volumeMounts:
+                    - name: shared-data # The name of volume defined in `volumes` section, see below
+                      mountPath: /data
+              volumes:
+                - name: shared-data
+                  persistentVolumeClaim: # From which PVC does this volume come from?
+                    claimName: data

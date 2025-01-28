@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hpcgame-test-genshin
+  labels:
+    name: hpcgame-test-genshin
+spec:
+  nodeSelector:
+    hpc.lcpu.dev/partition: x86
+  containers:
+    - name: rdma
+      securityContext:
+        capabilities:
+          add: ["SYS_PTRACE", "IPC_LOCK"]
+      # 题目要求base镜像，具有g++和openmp
+      image: crmirror.lcpu.dev/hpcgame/base:latest
+      resources:
+        limits:
+          memory: 6Gi
+          cpu: 2
+      command:
+        - sleep
+        - inf

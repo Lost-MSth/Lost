@@ -1,0 +1,25 @@
+# 容器镜像：hpckit，使用clang++编译器编译。
+# 程序会在配备 Kunpeng 920 处理器的服务器上运行，可以使用 16 个线程。
+# 保证这16个线程在同一个 NUMA 节点上。(?)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hpcgame-test-lcs
+  labels:
+    name: hpcgame-test-lcs
+spec:
+  nodeSelector:
+    hpc.lcpu.dev/partition: arm
+  containers:
+    - name: rdma
+      securityContext:
+        capabilities:
+          add: ["SYS_PTRACE", "IPC_LOCK"]
+      image: crmirror.lcpu.dev/hpcgame/hpckit:latest
+      resources:
+        limits:
+          memory: 48Gi
+          cpu: 16
+      command:
+        - sleep
+        - inf

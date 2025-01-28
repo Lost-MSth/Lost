@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hpcgame-test-eda
+  labels:
+    name: hpcgame-test-eda
+spec:
+  nodeSelector:
+    hpc.lcpu.dev/partition: arm
+  containers:
+    - name: arm
+      securityContext:
+        capabilities:
+          add: ["SYS_PTRACE", "IPC_LOCK"]
+      image: crmirror.lcpu.dev/hpcgame/full:latest
+      resources:
+        limits:
+          memory: 24Gi
+          cpu: 16
+      command:
+        - sleep
+        - inf
+  #     volumeMounts:
+  #       - name: shared-data  # 卷的名称,需要和下面volumes中的名称对应
+  #         mountPath: /data 
+  # volumes:
+  #   - name: shared-data    # 卷的名称
+  #     persistentVolumeClaim:
+  #       claimName: data-eda     # 已存在的PVC名称
