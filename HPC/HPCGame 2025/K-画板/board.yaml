@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hpcgame-test-board
+  labels:
+    name: hpcgame-test-board
+spec:
+  nodeSelector:
+    hpc.lcpu.dev/partition: x86
+  containers:
+    - name: vanity
+      securityContext:
+        capabilities:
+          add: ["SYS_PTRACE", "IPC_LOCK"]
+      image: crmirror.lcpu.dev/hpcgame/vanity:latest
+      resources:
+        limits:
+          memory: 32Gi
+          cpu: 8
+      command:
+        - sleep
+        - inf

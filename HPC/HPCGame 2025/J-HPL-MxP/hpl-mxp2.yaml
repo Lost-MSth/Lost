@@ -1,0 +1,24 @@
+# 容器镜像：hpckit，使用clang++编译器编译。
+# 程序会在配备 Kunpeng 920 处理器的服务器上运行，可以使用 1 个核心、8GB 内存。
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hpcgame-test-hpl
+  labels:
+    name: hpcgame-test-hpl
+spec:
+  nodeSelector:
+    hpc.lcpu.dev/partition: arm
+  containers:
+    - name: hplmxp
+      securityContext:
+        capabilities:
+          add: ["SYS_PTRACE", "IPC_LOCK"]
+      image: crmirror.lcpu.dev/hpcgame/full:latest
+      resources:
+        limits:
+          memory: "10Gi"
+          cpu: 2
+      command:
+        - sleep
+        - inf
