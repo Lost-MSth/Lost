@@ -13,3 +13,4 @@ PKU 谜协的微信公众号发布的【扫雷变体】题目的一些自动化�
 | [MV03-[C] 八连通](https://mp.weixin.qq.com/s/Rtt_3F8HN_Ti2TAP23wzZQ) | `z3_Minesweeper_C.py` | 要求所有雷相连（包括对角），这个条件很不好写，抄了个以前的代码，用距离矩阵判断是否连通。                       |
 | [MV04-[T] 无三连](https://mp.weixin.qq.com/s/TN2mlVNbCHoJOaErrwOEEA) | `z3_Minesweeper_T.py` | 要求雷不能在横向、纵向和斜向连成三个，这个条件好写。                                                           |
 | [MV05-[O] 外部](https://mp.weixin.qq.com/s/JwPe-N6zHpVM8tW_nrywQA)   | `z3_Minesweeper_O.py` | 要求雷和边界四方向连通，非雷四方向连通。考虑把外边围一圈边界后，其实就是两类格子各自连通，和 MV03 难度差不多。 |
+| [MV06-[D] 对偶](https://mp.weixin.qq.com/s/etNYZCqNLRkQAxAQvuUshw)   | `z3_Minesweeper_D.py` | 要求雷构成若干 $1 \times 2$ 的矩形，矩形之间不在四方向上相邻，算简单题。                                       |
