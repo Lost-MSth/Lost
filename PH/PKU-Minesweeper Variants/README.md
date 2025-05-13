@@ -15,3 +15,4 @@ PKU 谜协的微信公众号发布的【扫雷变体】题目的一些自动化�
 | [MV05-[O] 外部](https://mp.weixin.qq.com/s/JwPe-N6zHpVM8tW_nrywQA)   | `z3_Minesweeper_O.py` | 要求雷和边界四方向连通，非雷四方向连通。考虑把外边围一圈边界后，其实就是两类格子各自连通，和 MV03 难度差不多。                                     |
 | [MV06-[D] 对偶](https://mp.weixin.qq.com/s/etNYZCqNLRkQAxAQvuUshw)   | `z3_Minesweeper_D.py` | 要求雷构成若干 $1 \times 2$ 的矩形，矩形之间不在四方向上相邻，算简单题。                                                                           |
 | [MV07-[S] 蛇](https://mp.weixin.qq.com/s/ll7_9CI4QdlmSTkgASFSHw)     | `z3_Minesweeper_S.py` | 要求所有雷构成一条蛇，不允许身体接触自身，本质上就是四连通、头尾仅有一个相邻雷和中间只有两个相邻雷这三个条件的共同作用，把前面的代码稍微改改就好。 |
+| [MV08-[B] 平衡](https://mp.weixin.qq.com/s/J2pu3-CTGpSEa5UTQEJm_Q)   | `z3_Minesweeper_B.py` | 要求每行每列雷数相同，很简单。                                                                                                                     |
