@@ -14,3 +14,4 @@ PKU 谜协的微信公众号发布的【真知之岛】题目的一些自动化�
 | [IO04-Logic Grid 4](https://mp.weixin.qq.com/s/iXgADE1idGZGvguwnaD7IQ) | `z3_LogicGrid_4.py` | 简单题，形状限制硬写就好。                                                                 |
 | [IO05-Logic Grid 5](https://mp.weixin.qq.com/s/f4KWCNdktGC-2zh7o2bokw) | `z3_LogicGrid_5.py` | 写起来简单，但跑起来很慢。所以我对黑块面积为 3 加了特殊判断，立马就可以秒出了。            |
 | [IO06-Logic Grid 6](https://mp.weixin.qq.com/s/jZWIK0BxARiUtLIDUO7eIA) | `z3_LogicGrid_6.py` | 第四题稍微改一下就行，但要跑很久，所以加了一些特殊约束，还是要跑挺久，不过给出解快了很多。 |
+| [IO07-Logic Grid 7](https://mp.weixin.qq.com/s/vN_etSaBG3ZR3foJuOaxjA) | `z3_LogicGrid_7.py` | 手动加两个白区数字不是一个区或者是一个区的条件，就能很快跑出来。                           |
