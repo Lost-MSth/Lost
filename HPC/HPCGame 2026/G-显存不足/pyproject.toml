@@ -1,0 +1,33 @@
+[project]
+name = "prefill"
+version = "0.1.0"
+requires-python = "~=3.13.0"
+dependencies = [
+  "torch==2.10.0+rocm7.1",
+  "triton-rocm==3.6.0", # Just for version resolve
+  "transformers==4.57.6",
+  "datasets",
+  "flash-attn",
+]
+
+[[tool.uv.index]]
+name = "pytorch-rocm"
+url = "https://download.pytorch.org/whl/rocm7.1"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-rocm" },
+]
+torchvision = [
+  { index = "pytorch-rocm" },
+]
+triton-rocm = [
+  { index = "pytorch-rocm" },
+]
+pytorch-triton-rocm = [
+  { index = "pytorch-rocm" },
+]
+
+
+flash-attn = { path = "flash_attn-2.8.3-py3-none-any.whl" }

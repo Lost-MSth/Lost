@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kdt"
+version = "1.0.0"
+authors = [
+  { name="Shengyu Liu", email="2100013031@alumni.pku.edu.cn" },
+  { name="Shengjie Zhou", email="dblark@stu.pku.edu.cn" },
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.24.4",
+    "torch>=2.5.1",
+]

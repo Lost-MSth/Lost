@@ -1,0 +1,44 @@
+From a7bbcce9c226d5de326dc3f1687a84798c1e2459 Mon Sep 17 00:00:00 2001
+From: Lost-MSth <github@lost-msth.cn>
+Date: Tue, 3 Feb 2026 16:48:40 +0800
+Subject: [PATCH] Fix Armv9
+
+---
+ kernel/arm64/KERNEL.ARMV9SME | 2 +-
+ param.h                      | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/kernel/arm64/KERNEL.ARMV9SME b/kernel/arm64/KERNEL.ARMV9SME
+index dc333d829..3a120f773 100644
+--- a/kernel/arm64/KERNEL.ARMV9SME
++++ b/kernel/arm64/KERNEL.ARMV9SME
+@@ -1,3 +1,3 @@
+-include $(KERNELDIR)/KERNEL.ARMV8SVE
++include $(KERNELDIR)/KERNEL.A64FX
+ 
+ 
+diff --git a/param.h b/param.h
+index 8112e8915..34de0b8ba 100644
+--- a/param.h
++++ b/param.h
+@@ -3744,7 +3744,7 @@ is a big desktop or server with abundant cache rather than a phone or embedded d
+ #define CGEMM_DEFAULT_R 4096
+ #define ZGEMM_DEFAULT_R 4096
+ 
+-#elif defined(A64FX) // 512-bit SVE
++#elif defined(A64FX) || defined(ARMV9SME) // 512-bit SVE
+ 
+ #define GEMM_DIVIDE_RATE  1
+ 
+@@ -3793,7 +3793,7 @@ Until then, just keep it different than DGEMM_DEFAULT_UNROLL_N to keep copy rout
+ #define CGEMM_DEFAULT_R 4096
+ #define ZGEMM_DEFAULT_R 4096
+ 
+-#elif defined(ARMV8SVE) || defined(ARMV9SME) || defined(ARMV9) || defined(CORTEXA510)|| defined(CORTEXA710) || defined(CORTEXX2) // 128-bit SVE
++#elif defined(ARMV8SVE) || defined(ARMV9) || defined(CORTEXA510)|| defined(CORTEXA710) || defined(CORTEXX2) // 128-bit SVE
+ 
+ #if defined(XDOUBLE) || defined(DOUBLE)
+ #define SWITCH_RATIO            8
+-- 
+2.46.1.windows.1
+

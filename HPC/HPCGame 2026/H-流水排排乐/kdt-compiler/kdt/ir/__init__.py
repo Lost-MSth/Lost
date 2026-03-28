@@ -1,0 +1,93 @@
+"""
+KDT-DSL Intermediate Representation (IR) module.
+"""
+
+from kdt.ir.ir import (
+    # Enums
+    DataType,
+    MemorySpace,
+    ConstantExprDataType,
+    UnaryExprOp,
+    BinaryExprOp,
+    CompareExprOp,
+    UnaryOp,
+    BinaryOp,
+    CompareOp,
+    # Expressions
+    Expr,
+    ConstantExpr,
+    GetJobIdExpr,
+    LoopVarExpr,
+    UnaryExpr,
+    BinaryExpr,
+    CompareExpr,
+    # Shape and tile references
+    Shape,
+    TileStorage,
+    Tile,
+    IRLoc,
+    # IR nodes
+    IRNode,
+    Instruction,
+    # Computation instructions
+    Unary,
+    Binary,
+    Compare,
+    MatMul,
+    FMA,
+    Reduce,
+    Where,
+    Copy,
+    Fill,
+    # Data movement
+    Load,
+    Store,
+    # Debug
+    Print,
+    # Program structure
+    Block,
+    ForLoop,
+    IfElse,
+    Kernel,
+)
+
+__all__ = [
+    'DataType',
+    'MemorySpace',
+    'ConstantExprDataType',
+    'UnaryExprOp',
+    'BinaryExprOp',
+    'CompareExprOp',
+    'UnaryOp',
+    'BinaryOp',
+    'CompareOp',
+    'Expr',
+    'ConstantExpr',
+    'GetJobIdExpr',
+    'LoopVarExpr',
+    'UnaryExpr',
+    'BinaryExpr',
+    'CompareExpr',
+    'Shape',
+    'TileStorage',
+    'Tile',
+    'IRLoc',
+    'IRNode',
+    'Instruction',
+    'Unary',
+    'Binary',
+    'Compare',
+    'MatMul',
+    'FMA',
+    'Reduce',
+    'Where',
+    'Copy',
+    'Fill',
+    'Load',
+    'Store',
+    'Print',
+    'Block',
+    'ForLoop',
+    'IfElse',
+    'Kernel',
+]
